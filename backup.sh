@@ -1,17 +1,15 @@
 #!/bin/bash
 
-echo "Please enter the source directory"
+echo "Please enter the source directory: "
 read SD
-echo "Please enter the destination directory"
+echo "Please enter the destination directory: "
 read DD
+echo "Please enter a file name: "
+read fname
 TIME=$(date +%F:%H:%M:%S)
 cd $SD
 
 echo "$SD"
 echo "$DD"
 
-
-file=tar -r -f "$SD-$TIME" $SD
-echo "$file"
-
-mv $file $DD
+tar -r -f "$fname-$TIME.tar.gz" $SD
