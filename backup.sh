@@ -10,6 +10,8 @@ TIME=$(date +%F_%H_%M_%S)
 
 
 folder=$(echo "$SD"| awk -F / '{print $NF}')
+gzfile="$fname-$TIME.tar.gz"
 cd $SD
 cd ..
 tar -r -f "$fname-$TIME.tar.gz" $folder
+mv $gzfile $DD
