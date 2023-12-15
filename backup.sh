@@ -6,7 +6,8 @@ echo "Please enter the destination directory: "
 read DD
 echo "Please enter a file name: "
 read fname
-TIME=$(date +%F:%H:%M:%S)
+TIME=$(date +%F)
+echo "$TIME"
 cd $SD
 
 folder=$(echo "$SD"| awk -F / '{print $NF}')
