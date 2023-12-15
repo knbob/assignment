@@ -6,7 +6,7 @@ echo "Please enter the destination directory: "
 read DD
 echo "Please enter a file name: "
 read fname
-TIME=$(date +%F)
+TIME=$(date +%F_%H_%M_%S)
 echo "$TIME"
 cd $SD
 
