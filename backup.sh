@@ -16,4 +16,5 @@ echo "$SD"
 echo "$DD"
 
 cd $SD
+cd ..
 tar -r -f "$fname-$TIME.tar.gz" $folder
