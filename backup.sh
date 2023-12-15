@@ -9,11 +9,11 @@ read fname
 TIME=$(date +%F:%H:%M:%S)
 cd $SD
 
-folder="$SD"| awk -F \ '{print $NF}'
+folder=$("$SD"| awk -F \ '{print $NF}')
 echo "$folder"
 
 echo "$SD"
 echo "$DD"
 
-cd $SD
-tar -r -f "$fname-$TIME.tar.gz" $SD
+#cd $SD
+#tar -r -f "$fname-$TIME.tar.gz" $SD
