@@ -9,7 +9,7 @@ read fname
 TIME=$(date +%F:%H:%M:%S)
 cd $SD
 
-folder=$(echo "$SD"| awk -F \ '{print $NF}')
+folder=$(echo "$SD"| awk -F / '{print $NF}')
 echo "$folder"
 
 echo "$SD"
